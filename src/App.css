@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Set full-page background color */
+.main-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: black; /* black background */
+}
+
+/* Style the login form */
+.container {
+  background-color: gray; /* gray login box */
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); /* slight white glow */
+}
+
+/* Style for inputs */
+.input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Style for button */
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
   color: white;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Button hover effect */
+.btn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-top: 10px;
 }
